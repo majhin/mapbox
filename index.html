@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Track Shipment</title>
+		<meta
+			name="viewport"
+			content="initial-scale=1,maximum-scale=1,user-scalable=no"
+		/>
+		<link
+			href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css"
+			rel="stylesheet"
+		/>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100vh;
+				width: 100vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(37, 36, 36);
+			}
+			#map {
+				width: 500px;
+				height: 500px;
+			}
+
+			h1 {
+				color: white;
+				text-align: center;
+				font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Current Shipment Status</h1>
+			<div id="map"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
